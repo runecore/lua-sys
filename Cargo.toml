@@ -1,0 +1,15 @@
+[package]
+name = "lua-sys"
+version = "0.0.0"
+keywords = ["bindings", "lua"]
+categories = ["external-ffi-bindings"]
+description = "Bindings to Lua's C API"
+repository = "https://github.com/runecore/lua-sys"
+readme = "README.md"
+edition = "2021"
+links = "lua5.4"
+build = "build.rs"
+license = "MIT"
+
+[build-dependencies]
+cc = "1.0"
