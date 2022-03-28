@@ -1,7 +1,9 @@
 pub use bindings::*;
-use std::mem;
-use std::os::raw::{c_char, c_int, c_void};
-use std::ptr;
+use std::{
+    mem,
+    os::raw::{c_char, c_int, c_void},
+    ptr,
+};
 
 #[allow(non_upper_case_globals)]
 #[allow(non_camel_case_types)]
