@@ -129,6 +129,11 @@ pub unsafe fn luaL_loadfile(state: *mut lua_State, f: *const c_char) -> c_int {
     luaL_loadfilex(state, f, std::ptr::null())
 }
 
+#[allow(non_snake_case)]
+pub unsafe fn luaL_checkstring(state: *mut lua_State, n: c_int) -> *const c_char {
+    luaL_checklstring(state, n, std::ptr::null_mut())
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
