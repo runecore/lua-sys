@@ -4,7 +4,7 @@ Unsafe Rust Lua bindings, to be consumed by the Worldserver. The bindings were c
 
 ## Creating the bindings
 
-The bindings were generated using the following command.
+The bindings are generated using the following command.
 
 ```sh
 bindgen lua.hpp -o bindings.rs --no-layout-tests --size_t-is-usize --default-macro-constant-type signed
