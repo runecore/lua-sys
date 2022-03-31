@@ -57,6 +57,12 @@ pub unsafe fn lua_islightuserdata(state: *mut lua_State, n: c_int) -> bool {
 pub unsafe fn lua_isnil(state: *mut lua_State, n: c_int) -> bool {
     return lua_type(state, n) == LUA_TNIL as i32;
 }
+pub unsafe fn lua_isnumber(state: *mut lua_State, n: c_int) -> bool {
+    return lua_type(state, n) == LUA_TNUMBER as i32;
+}
+pub unsafe fn lua_isinteger(state: *mut lua_State, n: c_int) -> bool {
+    return lua_type(state, n) == LUA_TNUMBER as i32;
+}
 pub unsafe fn lua_isboolean(state: *mut lua_State, n: c_int) -> bool {
     return lua_type(state, n) == LUA_TBOOLEAN as i32;
 }
